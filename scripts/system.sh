@@ -21,6 +21,14 @@ printf "[SYSTEM] Install Ruby\n"
 brew install ruby
 printf "\n"
 
+printf "[SYSTEM] Update gem\n"
+gem update --system 
+printf "\n"
+
 printf "[SYSTEM] Install Node\n"
 brew install node
+printf "\n"
+
+printf "[SYSTEM] Install Jekyll\n"
+gem install jekyll
 printf "\n"
