@@ -15,14 +15,12 @@ process_option() {
       source scripts/npm.sh
       break;;
     'apps')
-      source scripts/system.sh
       source scripts/apps.sh
       break;;
     'config')
       source scripts/config.sh
       break;;
     'npm')
-      source scripts/system.sh
       source scripts/npm.sh
       break;;
     'system')
