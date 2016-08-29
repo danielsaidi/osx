@@ -68,3 +68,11 @@ printf "\n"
 printf "[APPS] Installing Visual Studio Code\n"
 brew cask install visual-studio-code
 printf "\n"
+
+printf "[APPS] Install manually from the AppStore:\n"
+printf "   XCode \n"
+printf "   Keynote \n"
+printf "   Numbers \n"
+printf "   Pages \n"
+printf "   Pixelmator \n"
+printf "\n"
