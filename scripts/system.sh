@@ -32,3 +32,7 @@ printf "\n"
 printf "[SYSTEM] Install Jekyll\n"
 gem install jekyll
 printf "\n"
+
+printf "[SYSTEM] Install CocoaPods\n"
+sudo gem install cocoapods
+printf "\n"
