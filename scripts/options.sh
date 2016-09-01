@@ -23,6 +23,9 @@ process_option() {
     'npm')
       source scripts/npm.sh
       break;;
+    'ssh')
+      source scripts/ssh.sh
+      break;;
     'system')
       source scripts/system.sh
       break;;

@@ -19,6 +19,7 @@ while true; do
     printf "      all:  Install everything\n"
     printf "     apps:  Install Homebrew software\n"
     printf "   config:  Configure OS X behavior\n"
+    printf "      ssh:  Setup and copy SSH key\n"
     printf "   system:  Install system software\n"
     printf "      npm:  Install global npm packages\n"
     printf "\n"
