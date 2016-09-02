@@ -13,12 +13,16 @@ process_option() {
       source scripts/system.sh
       source scripts/apps.sh
       source scripts/npm.sh
+      source scripts/ssh.sh
       break;;
     'apps')
       source scripts/apps.sh
       break;;
     'config')
       source scripts/config.sh
+      break;;
+    'fastlane')
+      source scripts/fastlane.sh
       break;;
     'npm')
       source scripts/npm.sh

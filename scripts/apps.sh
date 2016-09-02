@@ -37,6 +37,10 @@ printf "[APPS] Installing Mou\n"
 brew cask install mou
 printf "\n"
 
+printf "[APPS] Installing Postman\n"
+brew cask install postman
+printf "\n"
+
 printf "[APPS] Installing Sketch\n"
 brew cask install sketch
 printf "\n"
