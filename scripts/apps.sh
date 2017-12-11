@@ -21,10 +21,6 @@ printf "[APPS] Installing Dropbox\n"
 brew cask install dropbox
 printf "\n"
 
-printf "[APPS] Installing Evernote\n"
-brew cask install evernote
-printf "\n"
-
 printf "[APPS] Installing Google Chrome\n"
 brew cask install google-chrome
 printf "\n"

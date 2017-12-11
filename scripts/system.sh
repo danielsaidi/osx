@@ -36,3 +36,7 @@ printf "\n"
 printf "[SYSTEM] Install CocoaPods\n"
 sudo gem install cocoapods
 printf "\n"
+
+printf "[SYSTEM] Install Deintegrate\n"
+sudo gem install cocoapods-deintegrate
+printf "\n"
