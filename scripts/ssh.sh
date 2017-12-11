@@ -5,11 +5,14 @@
 
 # EXECUTION
 
-read -p "Enter your ssh e-mail: " ssh_email
-printf "\n"    
-
-printf "[SSH] Creating ssh key\n"
-ssh-keygen -t rsa -b 4096 -C $ssh_email
+read -p "[SSH] Create new SSH key (yes/no): " response
+if test "$response" = "yes"; then
+	printf "\n"
+	read -p "Enter your e-mail: " ssh_email
+	printf "\n"
+    printf "[SSH] Creating ssh key\n"
+    ssh-keygen -t rsa -b 4096 -C $ssh_email
+fi
 printf "\n"
 
 printf "[SSH] Adding ssh key to ssh-agent\n"
