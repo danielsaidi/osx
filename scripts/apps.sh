@@ -25,14 +25,6 @@ printf "[APPS] Installing Google Chrome\n"
 brew cask install google-chrome
 printf "\n"
 
-printf "[APPS] Installing Google Drive\n"
-brew cask install google-drive
-printf "\n"
-
-printf "[APPS] Installing Mou\n"
-brew cask install mou
-printf "\n"
-
 printf "[APPS] Installing Postman\n"
 brew cask install postman
 printf "\n"
