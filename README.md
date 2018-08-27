@@ -31,6 +31,14 @@ You can update packages in this file, by running the system script and
 selecting `gem`, or simply just run `bundle install` from the terminal.
 
 
+## NPM
+
+I use `Node` and `npm` to install web development software, as well as
+tools that I use for hybrid app development. However, since these libs
+are global, I manage these installations from `scripts/npm.sh` instead
+of a `package.json` file.
+
+
 ## Author
 
 Daniel Saidi, daniel.saidi@gmail.com
