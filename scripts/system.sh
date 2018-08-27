@@ -3,7 +3,6 @@
 # DESCRIPTION
 # Installs OS X system software.
 
-# EXECUTION
 if ! command -v brew > /dev/null; then
     printf "[SYSTEM] Install Homebrew\n"
     ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -13,8 +12,12 @@ else
 fi
 printf "\n"
 
-printf "[SYSTEM] Install Cask\n"
+printf "[SYSTEM] Install Homebrew Cask\n"
 brew tap caskroom/cask
+printf "\n"
+
+printf "[SYSTEM] Install Brew Bundle\n"
+brew tap Homebrew/bundle
 printf "\n"
 
 printf "[SYSTEM] Install Ruby\n"
@@ -27,16 +30,4 @@ printf "\n"
 
 printf "[SYSTEM] Install Node\n"
 brew install node
-printf "\n"
-
-printf "[SYSTEM] Install Jekyll\n"
-gem install jekyll
-printf "\n"
-
-printf "[SYSTEM] Install CocoaPods\n"
-sudo gem install cocoapods
-printf "\n"
-
-printf "[SYSTEM] Install Deintegrate\n"
-sudo gem install cocoapods-deintegrate
 printf "\n"
