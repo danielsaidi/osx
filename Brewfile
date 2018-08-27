@@ -7,7 +7,8 @@ brew "mas"
 cask "java"
 cask "android-studio"
 
-# Swift
+# iOS/Swift
+brew "carthage"
 brew "swiftgen"
 brew "swiftlint"
 
