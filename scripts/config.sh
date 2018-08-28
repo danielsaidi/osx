@@ -11,3 +11,7 @@ printf "\n"
 printf "[CONFIG] Enable tabbing between all controls\n"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 printf "\n"
+
+printf "[CONFIG] Enable developer mode for admin users\n"
+sudo /usr/sbin/DevToolsSecurity -enable
+printf "\n"
