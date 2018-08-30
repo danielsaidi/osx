@@ -16,6 +16,7 @@ process_option() {
       source scripts/system.sh
       brew bundle
       bundle install
+      source scripts/git.sh
       source scripts/npm.sh
       source scripts/ssh.sh
       break;;
@@ -27,6 +28,9 @@ process_option() {
       break;;
     'gem')
       bundle install
+      break;;
+    'git')
+      source scripts/git.sh
       break;;
     'npm')
       source scripts/npm.sh
@@ -57,6 +61,7 @@ while true; do
     printf "     brew:  Install packages & apps from Brewfile\n"
     printf "   config:  Configure macOS\n"
     printf "      gem:  Install packages from Gemfile\n"
+    printf "      git:  Display .gitconfig aliases\n"
     printf "      npm:  Install npm packages from scripts/npm.sh\n"
     printf "      ssh:  Create & copy SSH key\n"
     printf "   system:  Install system software\n"
