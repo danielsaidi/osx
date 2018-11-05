@@ -1,6 +1,7 @@
 cask_args appdir: "/Applications"
 
-# Mac AppStore CLI
+# Tools
+brew "git bash-completion"
 brew "mas"
 
 #Android
@@ -25,4 +26,3 @@ cask "spectacle"
 cask "spotify"
 cask "sublime-text"
 cask "visual-studio-code"
- 
