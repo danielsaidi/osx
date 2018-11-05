@@ -5,14 +5,14 @@
 
 # EXECUTION
 
-printf "[NPM] Installing Ionic\n"
+echo "[NPM] Installing Ionic"
 sudo npm install -g cordova ionic
-printf "\n"
+echo ""
 
-printf "[NPM] Installing Gulp\n"
+echo "[NPM] Installing Gulp"
 sudo npm install -g gulp-cli
-printf "\n"
+echo ""
 
-printf "[NPM] Installing TypeScript\n"
+echo "[NPM] Installing TypeScript"
 sudo npm install -g typescript
-printf "\n"
+echo ""

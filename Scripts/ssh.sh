@@ -7,21 +7,21 @@
 
 read -p "[SSH] Create new SSH key (yes/no): " response
 if test "$response" = "yes"; then
-	printf "\n"
+	echo ""
 	read -p "Enter your e-mail: " ssh_email
-	printf "\n"
-    printf "[SSH] Creating ssh key\n"
+	echo ""
+    echo "[SSH] Creating ssh key"
     ssh-keygen -t rsa -b 4096 -C $ssh_email
 fi
-printf "\n"
+echo ""
 
-printf "[SSH] Adding ssh key to ssh-agent\n"
+echo "[SSH] Adding ssh key to ssh-agent"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
-printf "\n"
+echo ""
 
-printf "[SSH] Copying ssh key to pasteboard\n"
+echo "[SSH] Copying ssh key to pasteboard"
 pbcopy < ~/.ssh/id_rsa.pub
 
-printf "[SSH] Done\n"
-printf "\n"
+echo "[SSH] Done"
+echo ""

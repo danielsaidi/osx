@@ -16,6 +16,7 @@ process_option() {
       source scripts/system.sh
       brew bundle
       bundle install
+      source scripts/dev.sh
       source scripts/git.sh
       source scripts/npm.sh
       source scripts/ssh.sh
@@ -25,6 +26,9 @@ process_option() {
       break;;
     'config')
       source scripts/config.sh
+      break;;
+    'dev')
+      source scripts/dev.sh
       break;;
     'gem')
       bundle install
@@ -53,24 +57,27 @@ process_option() {
 # MENU
 while true; do
   if [[ $# == 0 ]]; then
-    printf "\n\n***** Setup *****\n\n"
-
-    printf "Available commands:\n\n"
-    printf "\n"
-    printf "      all:  Install everything\n"
-    printf "     brew:  Install packages & apps from Brewfile\n"
-    printf "   config:  Configure macOS\n"
-    printf "      gem:  Install packages from Gemfile\n"
-    printf "      git:  Display .gitconfig aliases\n"
-    printf "      npm:  Install npm packages from scripts/npm.sh\n"
-    printf "      ssh:  Create & copy SSH key\n"
-    printf "   system:  Install system software\n"
-    printf "\n"
-    printf "        q:  Quit/Exit.\n"
-    printf "\n\n"
-
+    echo ""
+    echo "******************"
+    echo "    Setup OS X    "
+    echo "******************"
+    echo ""
+    echo "Available commands:"
+    echo ""
+    echo "      all:  Install everything"
+    echo "     brew:  Install packages & applications from Brewfile"
+    echo "   config:  Configure macOS"
+    echo "      dev:  Configure development environment"
+    echo "      gem:  Install packages from Gemfile"
+    echo "      git:  Display .gitconfig aliases"
+    echo "      npm:  Install npm packages from scripts/npm.sh"
+    echo "      ssh:  Create & copy SSH key"
+    echo "   system:  Install system software"
+    echo ""
+    echo "        q:  Quit/Exit."
+    echo ""
     read -p "Enter option: " response
-    printf "\n"
+    echo ""
     process_option $response
   else
     process_option $1

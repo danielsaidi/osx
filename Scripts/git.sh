@@ -3,8 +3,9 @@
 # DESCRIPTION
 # Git aliases
 
-printf "Add the following to [alias] in ~/.gitconfig:\n\n"
-printf "tag-latest = tag -l --sort=-v:refname # reverse\n"
-printf "tagrev = tag-latest"
+echo "Add the following to [alias] in ~/.gitconfig:"
+echo ""
+echo "tag-latest = tag -l --sort=-v:refname # reverse"
+echo "tagrev = tag-latest"
 open ~/.gitconfig
-printf "\n"
+echo ""

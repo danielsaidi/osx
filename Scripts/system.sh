@@ -4,30 +4,30 @@
 # Installs OS X system software.
 
 if ! command -v brew > /dev/null; then
-    printf "[SYSTEM] Install Homebrew\n"
+    echo "[SYSTEM] Install Homebrew"
     ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    printf "[SYSTEM] Update Homebrew\n"
+    echo "[SYSTEM] Update Homebrew"
     brew update
 fi
-printf "\n"
+echo ""
 
-printf "[SYSTEM] Install Homebrew Cask\n"
+echo "[SYSTEM] Install Homebrew Cask"
 brew tap caskroom/cask
-printf "\n"
+echo ""
 
-printf "[SYSTEM] Install Brew Bundle\n"
+echo "[SYSTEM] Install Brew Bundle"
 brew tap Homebrew/bundle
-printf "\n"
+echo ""
 
-printf "[SYSTEM] Install Ruby\n"
+echo "[SYSTEM] Install Ruby"
 brew install ruby
-printf "\n"
+echo ""
 
-printf "[SYSTEM] Update gem\n"
+echo "[SYSTEM] Update gem"
 gem update --system 
-printf "\n"
+echo ""
 
-printf "[SYSTEM] Install Node\n"
+echo "[SYSTEM] Install Node"
 brew install node
-printf "\n"
+echo ""

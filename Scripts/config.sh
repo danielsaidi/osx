@@ -3,15 +3,15 @@
 # DESCRIPTION
 # Configures OS X.
 
-printf "[CONFIG] Finder, Show hidden files\n"
+echo "[CONFIG] Finder, Show hidden files"
 defaults write com.apple.finder AppleShowAllFiles -bool true
 killall Finder -9
-printf "\n"
+echo ""
 
-printf "[CONFIG] Enable tabbing between all controls\n"
+echo "[CONFIG] Enable tabbing between all controls"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-printf "\n"
+echo ""
 
-printf "[CONFIG] Enable developer mode for admin users\n"
+echo "[CONFIG] Enable developer mode for admin users"
 sudo /usr/sbin/DevToolsSecurity -enable
-printf "\n"
+echo ""
