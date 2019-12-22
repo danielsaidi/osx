@@ -18,7 +18,6 @@ process_option() {
       bundle install
       source scripts/dev.sh
       source scripts/git.sh
-      source scripts/npm.sh
       source scripts/ssh.sh
       break;;
     'brew')
@@ -35,9 +34,6 @@ process_option() {
       break;;
     'git')
       source scripts/git.sh
-      break;;
-    'npm')
-      source scripts/npm.sh
       break;;
     'ssh')
       source scripts/ssh.sh

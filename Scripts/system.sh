@@ -13,7 +13,7 @@ fi
 echo ""
 
 echo "[SYSTEM] Install Homebrew Cask"
-brew tap caskroom/cask
+brew tap caskroom/cask-cask
 echo ""
 
 echo "[SYSTEM] Install Brew Bundle"
@@ -26,8 +26,4 @@ echo ""
 
 echo "[SYSTEM] Update gem"
 gem update --system 
-echo ""
-
-echo "[SYSTEM] Install Node"
-brew install node
 echo ""
