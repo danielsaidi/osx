@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DESCRIPTION
-# Creates an ssh key and copies it to the pasteboard
+# Creates a new ssh key and copies it to the pasteboard
 
 # EXECUTION
 

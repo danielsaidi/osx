@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # DESCRIPTION
-# Git aliases
+# Configure git (e.g. adding aliases)
 
-echo "Add the following to [alias] in ~/.gitconfig:"
-echo ""
-echo "tag-latest = tag -l --sort=-v:refname # reverse"
-echo "tagrev = tag-latest"
+echo "Add the following to [alias] in ~/.gitconfig :"
+echo "  tag-latest = tag -l --sort=-v:refname # reverse"
+echo "  tagrev = tag-latest"
 open ~/.gitconfig
 echo ""

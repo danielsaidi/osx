@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DESCRIPTION
-# Configures OS X.
+# Configure macOS (e.g. enabling developer mode).
 
 echo "[CONFIG] Enable tabbing between all controls"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3

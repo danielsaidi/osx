@@ -1,18 +1,14 @@
 cask_args appdir: "/Applications"
 
 # Tools
-brew "git bash-completion"
-
-#Android
-cask "android-studio"
+brew "bash-completion"
 
 # iOS/Swift
-brew "carthage"
+brew "fastlane"
 brew "swiftgen"
 brew "swiftlint"
 
 # Apps
-cask "alfred"
 cask "dropbox"
 cask "google-chrome"
 cask "postman"

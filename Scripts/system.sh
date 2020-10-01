@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DESCRIPTION
-# Installs OS X system software.
+# Install System Software (e.g. Homebrew, Cask etc.)
 
 if ! command -v brew > /dev/null; then
     echo "[SYSTEM] Install Homebrew"
@@ -18,10 +18,6 @@ echo ""
 
 echo "[SYSTEM] Install Brew Bundle"
 brew tap Homebrew/bundle
-echo ""
-
-echo "[SYSTEM] Install Ruby"
-brew install ruby
 echo ""
 
 echo "[SYSTEM] Update gem"
