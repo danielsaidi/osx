@@ -39,6 +39,14 @@ are global, I manage these installations from `scripts/npm.sh` instead
 of a `package.json` file.
 
 
+## Terminal
+
+For now, this repo contains a `.zshrc` file, that can be copied to `~/`
+and enables stuff like git autocomplete. It will also set git to apply
+English as standard language, which is nice for locales where Apple do
+apply that locale to git.
+
+
 ## Author
 
 Daniel Saidi, daniel.saidi@gmail.com
