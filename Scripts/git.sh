@@ -3,8 +3,27 @@
 # DESCRIPTION
 # Configure git (e.g. adding aliases)
 
-echo "Add the following to [alias] in ~/.gitconfig :"
-echo "  tag-latest = tag -l --sort=-v:refname # reverse"
-echo "  tagrev = tag-latest"
-open ~/.gitconfig
+
+echo "
+
+*******************
+        git        
+*******************
+
+Add the following to ~/.gitconfig :
+
+[color]
+  ui = auto
+
+[tag]
+  sort = -v:refname
+
+"
+
+read -p "Open ~/.gitconfig? [y/n] " response
 echo ""
+
+case $response in
+  [yY][eE][sS]|[yY])
+    open ~/.gitconfig
+esac
